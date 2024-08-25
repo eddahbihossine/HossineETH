@@ -12,6 +12,9 @@ import (
 func main() {
 
 
+
+    
+
     scan := bufio.NewScanner(os.Stdin)
     fmt.Println("Enter the number of blocks you want to create")
     scan.Scan()
