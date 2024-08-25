@@ -11,10 +11,6 @@ import (
 
 func main() {
 
-
-
-    
-
     scan := bufio.NewScanner(os.Stdin)
     fmt.Println("Enter the number of blocks you want to create")
     scan.Scan()
@@ -26,7 +22,7 @@ func main() {
     Blockchain = append(Blockchain, HossineEthBlock)
 
 
-   for i := 0; i < num; i++ {
+   for i := 1; i < num; i++ {
         previousBlock := Blockchain[len(Blockchain)-1]
         newBlock := createblock(previousBlock, "Hossine Eth Block " + strconv.Itoa(i))
         Blockchain = append(Blockchain, newBlock)
